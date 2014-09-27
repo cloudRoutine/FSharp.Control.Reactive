@@ -399,6 +399,7 @@
       <HintPath>..\lib\FSharp\FSharp.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
+  </ItemGroup>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Import Project="$(SolutionDir)\.paket\paket.targets" />
   <Choose>

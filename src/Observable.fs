@@ -1473,7 +1473,7 @@ module Observable =
 
 
     /// Synchronizes the observable sequence so that notifications cannot be delivered concurrently
-    /// this voerload is useful to "fix" and observable sequence that exhibits concurrent 
+    /// this overload is useful to "fix" and observable sequence that exhibits concurrent 
     /// callbacks on individual observers, which is invalid behavior for the query processor
     let synchronize  source : IObservable<'Source>= 
         Observable.Synchronize( source )

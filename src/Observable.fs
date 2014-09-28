@@ -337,7 +337,7 @@ module Observable =
 
 
     /// Concatenates the second observable sequence to the first observable sequence
-    /// upn the successful termination of the first 
+    /// upon the successful termination of the first 
     let concat (second: IObservable<'T>) (first: IObservable<'T>) =
         Observable.Concat(first, second)
     

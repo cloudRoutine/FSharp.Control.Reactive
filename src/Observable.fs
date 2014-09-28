@@ -430,7 +430,7 @@ module Observable =
 
     /// Time shifts the observable sequence to start propagating notifications at the specified absolute time.
     /// The relative time intervals between the values are preserved.
-    let delayUnitl  ( dueTime:DateTimeOffset ) ( source:IObservable<'Source> ) : IObservable<'Source> =
+    let delayUntil  ( dueTime:DateTimeOffset ) ( source:IObservable<'Source> ) : IObservable<'Source> =
         Observable.Delay(source, dueTime )
         
 

@@ -1795,7 +1795,7 @@ module Observable =
 
 
     /// Merges two observable sequences into one observable sequence by combining their elements in a pairwise fashion.
-    let zip ( first:IObservable<'Source1>)( second:IObservable<'Source2>) ( resultSelector:'Source1 -> 'Source2 -> 'Result) : IObservable<'Result> =
+    let zip ( resultSelector:'Source1 -> 'Source2 -> 'Result) ( first:IObservable<'Source1>)( second:IObservable<'Source2>)  : IObservable<'Result> =
         Observable.Zip( first, second, Func<'Source1,'Source2,'Result> resultSelector)
 
 
